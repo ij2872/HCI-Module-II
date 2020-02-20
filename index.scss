@@ -2,6 +2,13 @@
 $primary-blue: #1389FD;
 $primary-orange: #F8D5B5;
 $primary-white: #FFFFFF;
+$code-highlight: #1FBAAC;
+$background-code: #F8F9FA;
+
+*{
+  
+  font-family: roboto;
+}
 
 body{
   background: black;
@@ -66,14 +73,33 @@ nav{
 
 .content-container{
   padding: 80px 77px;
+
+  .title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 58px;
+  }
 }
 
 .box{
    min-height: 100px;
    padding: 14px 55px 36px;
    background: #E2F4DA;
-   margin: 20px 0;
+   margin: 50px 0;
   
+   .box-content{
+
+   }
+   .box-title{
+      margin-bottom: 10px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 48px;
+   }
 }
 
 .box-alert{
@@ -81,10 +107,66 @@ nav{
 }
 
 
-.footer{}
-
-
-*{
+// STEPS
+.step-container{
+  margin-bottom: 25px;
   
-  font-family: roboto;
+  .step-title{
+    margin-bottom: 5px;
+
+    h3{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    
+  }
+  .step-content{
+    *{
+      margin-bottom: 12px;
+    }
+  }
+  .step-text{
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .step-code{
+    padding: 9px 10px 8px;
+    background: $background-code;
+    border: solid grey 1px;
+
+    border: 1px solid #DEE2E6;
+    box-sizing: border-box;
+    
+    p{
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 21px;
+      color: #000000;
+
+      .code-highlight{
+        color: $code-highlight;
+        font-size: 14px;
+        line-height: 21px;
+        
+      }
+    }
+  }
+}
+// END STEPS
+
+
+
+
+
+.footer{
+
 }

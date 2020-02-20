@@ -1,4 +1,8 @@
 /* Variables */
+* {
+  font-family: roboto;
+}
+
 body {
   background: black;
   display: -webkit-box;
@@ -71,18 +75,84 @@ nav .nav-links .nav-link {
   padding: 80px 77px;
 }
 
+.content-container .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 58px;
+}
+
 .box {
   min-height: 100px;
   padding: 14px 55px 36px;
   background: #E2F4DA;
-  margin: 20px 0;
+  margin: 50px 0;
+}
+
+.box .box-title {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .box-alert {
   background: #F8D5B5;
 }
 
-* {
-  font-family: roboto;
+.step-container {
+  margin-bottom: 25px;
+}
+
+.step-container .step-title {
+  margin-bottom: 5px;
+}
+
+.step-container .step-title h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.step-container .step-content * {
+  margin-bottom: 12px;
+}
+
+.step-container .step-text {
+  margin-bottom: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.step-container .step-code {
+  padding: 9px 10px 8px;
+  background: #F8F9FA;
+  border: solid grey 1px;
+  border: 1px solid #DEE2E6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.step-container .step-code p {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.step-container .step-code p .code-highlight {
+  color: #1FBAAC;
+  font-size: 14px;
+  line-height: 21px;
 }
 /*# sourceMappingURL=index.css.map */
