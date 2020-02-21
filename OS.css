@@ -10,6 +10,11 @@ body {
   padding-top: 50px;
 }
 
+.brmedium { 
+  display: block; 
+  margin-bottom: 1em; 
+  } 
+
 .btn {
   min-height: 42px;
   display: inline-block;
@@ -51,9 +56,11 @@ nav {
 }
 
 nav .nav-logo {
-  width: 129px;
-  height: 37px;
-  /* background: #1389FD; */
+  width: 150px;
+  height: 50px;
+  background-image: url("assets/logo.png");
+  background-size: contain;
+
 }
 
 nav .nav-links .nav-link {
@@ -84,10 +91,20 @@ nav .nav-links .nav-link {
 
 .box-warning {
   background: #FFF3CD;
+  height: 74px;
+}
+
+.important_1{
+  color:#856404;
+  padding-left: 81px;
+  text-align: center;
 }
 
 .important{
   color:#856404;
+  padding-left: 81px;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .hyperlink_blue{
@@ -95,6 +112,9 @@ nav .nav-links .nav-link {
 }
 
 .title{
+  height: 100px;
+  padding-bottom: 1px;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -106,8 +126,9 @@ nav .nav-links .nav-link {
 }
 
 .alert_icon{
-  padding-right: 30px;
-  padding-top: 15px;
+  padding-left: 306px;
+  padding-top: 20px;
+
 }
 
 .image_box{
