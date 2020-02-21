@@ -2,6 +2,7 @@
 $primary-blue: #1389FD;
 $primary-orange: #F8D5B5;
 $primary-white: #FFFFFF;
+$primary-warning: #FF0000;
 $code-highlight: #1FBAAC;
 $background-code: #F8F9FA;
 
@@ -15,6 +16,10 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+.pl-4{
+  margin-left: 16px;
 }
 
 .btn{
@@ -50,13 +55,14 @@ nav{
   .nav-logo{
     width: 129px;
     height: 37px;
-    background: $primary-blue;
+    // background: $primary-blue;
   }
   
   .nav-links{
     
     .nav-link{
-      height: 42px;
+
+      height: 36px;
       display: inline-block;
       padding: 9px 13px;
       margin: 0px 15px;
@@ -64,7 +70,8 @@ nav{
       color: white;
       line-height: 42px;
       vertical-align: middle;
-      
+      text-decoration: none;
+
     }
   }
   
@@ -109,7 +116,7 @@ nav{
 
 // STEPS
 .step-container{
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   
   .step-title{
     margin-bottom: 5px;
@@ -124,9 +131,7 @@ nav{
     
   }
   .step-content{
-    *{
-      margin-bottom: 12px;
-    }
+
   }
   .step-text{
     margin-bottom: 24px;
@@ -137,26 +142,80 @@ nav{
     line-height: 24px;
   }
   .step-code{
-    padding: 9px 10px 8px;
+    min-height: 24px;
+    padding: 9px 18px 8px;
+    margin-bottom: 24px;
     background: $background-code;
     border: solid grey 1px;
 
     border: 1px solid #DEE2E6;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
     
     p{
-      font-family: 'Roboto Mono';
+      font-family: "Roboto Mono", monospace;
       font-style: normal;
       font-weight: normal;
       font-size: 13px;
       line-height: 21px;
       color: #000000;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
 
       .code-highlight{
         color: $code-highlight;
         font-size: 14px;
         line-height: 21px;
         
+      }
+    }
+  }
+
+  .step-important{
+    margin-top: 48px;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #FFF3CD;
+    border: 6px solid #292720;
+    box-sizing: border-box;
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 0px;
+
+    .step-important-title{
+      
+
+      display: flex;
+      align-items: flex-end;
+      img{
+
+        margin-right: 17px;
+      }
+      h3{
+        margin: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 24px;
+        color: $primary-warning;
+
+      }
+    }
+
+    .step-important-content{
+      p{
+        max-width: 90ch;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
       }
     }
   }

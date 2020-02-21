@@ -9,7 +9,11 @@
   <body></body>
   <div class="frame">
     <nav>
-      <div class="nav-logo"></div>
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="./assets/flutter-logo.svg" alt="Home">
+        </a>
+      </div>
       <div class="nav-links">
         <a class="nav-link" href="./OS.html">OS Selection</a>
         <a class="nav-link">Home</a>
@@ -53,6 +57,44 @@
               <p class="step-text">
                 You are now ready to run Flutter commands in the Flutter Console!
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="box-title">Run flutter doctor</h2>
+        
+        <div class="box-content">
+          <div class="step-container">
+            <div class="step-title">
+              <h3>Step 1:</h3>
+            </div>
+            <div class="step-content">
+              <p class="step-text">From a console window that has the Flutter directory in the path (see above), run the following command to see if there are any platform dependencies you need to complete the setup:</p>
+              <div class="step-code">
+                <p><span class="code-highlight">C:\src\flutter> </span> flutter doctor</p>
+              </div>
+              <p class="step-text">
+                This command checks your environment and displays a report of the status of your Flutter installation. Check the output carefully for other software you might need to install or further tasks to perform.
+              </p>
+              <p class="step-text">
+                For example:
+              </p>
+              <div class="step-code">
+                <p>[-]Android Developer toolchain</p>
+                <p class="pl-4">- Android SDK at D:\Android</p>
+              </div>
+              <div class="step-important">
+                <div class="step-important-title">
+                  <img src="./assets/warning.svg" alt="warning">
+                  <h3>WARNING:</h3>
+                </div>
+                <div class="step-important-content">
+                  <p>The Flutter tool uses Google Analytics to anonymously report feature usage statistics and basic crash reports. This data is used to help improve Flutter tool over time.</p>
+                  <p>Flutter tool analytics are not sent on the very first run.</p>
+                  <p>By downloading the flutter SDK, you agree to the Google Terms of Service.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
